@@ -133,7 +133,7 @@ export default function Layout() {
               Frutería del Barri
             </p>
             <p style={{ color: 'rgba(251,245,234,0.5)', fontSize: '0.9rem', lineHeight: 1.7, maxWidth: '400px' }}>
-              Frutas tropicales, verduras frescas, batidos naturales y el mejor sabor latino en Sabadell.
+              Frutas tropicales, exóticas y verduras frescas con todo el sabor latino en Sabadell.
             </p>
           </div>
 

@@ -134,37 +134,3 @@ export const VERDURAS = [
   },
 ]
 
-export const BATIDOS = [
-  {
-    name: 'Batido de Mango',
-    desc: 'Mango tropical triturado al momento. Sin azúcar añadido, pura fruta.',
-    tag: 'Natural',
-    origin: 'Sudamérica',
-    img: 'https://images.unsplash.com/photo-1622597467821-df79dcb4f94d?w=600&h=600&fit=crop&auto=format',
-    alt: 'Batido natural de mango',
-  },
-  {
-    name: 'Batido Tropical',
-    desc: 'Piña, mango y maracuyá. Un viaje a Latinoamérica en cada sorbo.',
-    tag: 'Latino',
-    origin: 'Sudamérica',
-    img: 'https://images.unsplash.com/photo-1583577612013-4fecf7bf8f13?w=600&h=600&fit=crop&auto=format',
-    alt: 'Batidos tropicales coloridos',
-  },
-  {
-    name: 'Batido de Fresas',
-    desc: 'Fresas naturales con leche o agua de coco. Pura vitamina en vaso.',
-    tag: 'Natural',
-    origin: 'Lleida',
-    img: 'https://images.unsplash.com/photo-1570696516188-ade861b84a49?w=600&h=600&fit=crop&auto=format',
-    alt: 'Batido natural de fresas',
-  },
-  {
-    name: 'Batido de Guanábana',
-    desc: 'Un clásico latino cremoso y refrescante. Sabor único e inconfundible.',
-    tag: 'Latino',
-    origin: 'Sudamérica',
-    img: 'https://images.unsplash.com/photo-1603569283847-aa295f0d016a?w=600&h=600&fit=crop&auto=format',
-    alt: 'Batido de frutas variadas',
-  },
-]

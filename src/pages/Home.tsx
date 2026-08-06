@@ -49,7 +49,7 @@ export default function Home() {
 
             <div className="lg:pb-4">
               <p style={{ color: 'rgba(251,245,234,0.72)', fontSize: 'clamp(1rem, 1.5vw, 1.2rem)', lineHeight: 1.7, maxWidth: '420px', marginBottom: '2.5rem' }}>
-                Frutas tropicales, verduras frescas y batidos naturales de alta calidad — con todo el sabor latino que nos hace únicos en Avinguda Matadepera nº49.
+                Frutas tropicales, exóticas y verduras frescas de alta calidad — con todo el sabor latino que nos hace únicos en Avinguda Matadepera nº49.
               </p>
 
               <div className="flex flex-wrap gap-3 mb-12">
@@ -102,7 +102,7 @@ export default function Home() {
           {Array(4).fill([
             'Melón Manchego', 'Sandía de La Mancha', 'Melocotón', 'Plátano Canario',
             'Calabacín', 'Pimientos del Campo', 'Tomates del Campo', 'Mango Tropical',
-            'Maracuyá', 'Batidos Naturales', 'Producto de Proximidad',
+            'Maracuyá', 'Producto de Proximidad',
           ]).flat().map((item, i) => (
             <span key={i} className="flex items-center text-xs font-medium tracking-[0.2em] uppercase mr-8" style={{ color: '#a8c97e' }}>
               <span className="w-1 h-1 rounded-full mr-8 shrink-0" style={{ backgroundColor: '#a8c97e', opacity: 0.5 }} />
@@ -212,34 +212,34 @@ export default function Home() {
                 </div>
               </div>
 
-              {/* Batidos */}
+              {/* Contacto */}
               <div className="relative overflow-hidden group flex-1" style={{ borderRadius: '12px', minHeight: '200px' }}>
                 <img
-                  src="https://images.unsplash.com/photo-1574537899275-c8a8188887bb?w=700&h=400&fit=crop&auto=format"
-                  alt="Batidos tropicales frescos"
+                  src="https://images.unsplash.com/photo-1542838132-92c53300491e?w=700&h=400&fit=crop&auto=format"
+                  alt="Tienda de frutas y verduras"
                   className="w-full h-full object-cover absolute inset-0 transition-transform duration-700 group-hover:scale-[1.04]"
                 />
                 <div className="absolute inset-0" style={{ background: 'linear-gradient(to top, rgba(15,42,23,0.95) 0%, rgba(15,42,23,0.45) 55%, transparent 100%)' }} />
                 <div className="absolute top-5 left-5">
                   <span className="text-xs font-semibold px-3 py-1.5 tracking-widest uppercase"
                     style={{ backgroundColor: '#f5c07a', color: '#1a1209', borderRadius: '3px' }}>
-                    Al momento
+                    Visítanos
                   </span>
                 </div>
                 <div className="absolute bottom-0 left-0 right-0 p-5">
                   <h3 style={{ fontFamily: "'Fraunces', Georgia, serif", color: '#fbf5ea', fontSize: '1.3rem', fontWeight: 700, marginBottom: '0.5rem' }}>
-                    Batidos Tropicales
+                    Encarga tu cesta
                   </h3>
                   <p className="text-xs mb-4" style={{ color: 'rgba(251,245,234,0.82)', lineHeight: 1.6 }}>
-                    Mango, maracuyá, guanábana, lulo y más.
+                    Llámanos o escríbenos y lo preparamos.
                   </p>
-                  <Link to="/productos?tab=batidos"
+                  <Link to="/contacto"
                     className="inline-flex items-center gap-1.5 text-xs font-semibold transition-all duration-200"
                     style={{ color: '#f5c07a' }}
                     onMouseEnter={e => (e.currentTarget.style.opacity = '0.75')}
                     onMouseLeave={e => (e.currentTarget.style.opacity = '1')}
                   >
-                    Ver Batidos
+                    Contactar
                     <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
                   </Link>
                 </div>
@@ -257,7 +257,7 @@ export default function Home() {
             { img: 'https://images.unsplash.com/photo-1568391047493-d859d5ddb509?w=500&h=600&fit=crop&auto=format', label: 'Frutas', alt: 'Frutas frescas coloridas' },
             { img: 'https://images.unsplash.com/photo-1597362925123-77861d3fbac7?w=500&h=600&fit=crop&auto=format', label: 'Verduras', alt: 'Verduras frescas del campo' },
             { img: 'https://images.unsplash.com/photo-1560806887-1e4cd0b6cbd6?w=500&h=600&fit=crop&auto=format', label: 'Tropical', alt: 'Frutas tropicales' },
-            { img: 'https://images.unsplash.com/photo-1505252585461-04db1eb84625?w=500&h=600&fit=crop&auto=format', label: 'Batidos', alt: 'Batidos naturales de frutas' },
+            { img: 'https://images.unsplash.com/photo-1601493700631-2b16ec4b4716?w=500&h=600&fit=crop&auto=format', label: 'Mango', alt: 'Mango tropical' },
           ].map((item, i) => (
             <div key={item.label} className="relative overflow-hidden group" style={{ borderRadius: '8px' }}>
               <img src={item.img} alt={item.alt}
