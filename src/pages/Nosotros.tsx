@@ -86,7 +86,7 @@ export default function Nosotros() {
               Somos la Frutería del Barri, tu tienda de frutas tropicales, verduras y patatas de confianza en Sabadell. Traemos los mejores sabores de Latinoamérica directamente a tu barrio: lulo, maracuyá, guanábana, mango, kiwi y mucho más.
             </p>
             <p style={{ fontSize: '1.05rem', lineHeight: 1.8, color: '#1a1209', opacity: 0.6, marginBottom: '3rem' }}>
-              Además preparamos batidos tropicales frescos al momento y ofrecemos verduras, tubérculos, productos a granel, legumbres, miel natural, yerba mate y bebidas. Ven a visitarnos en Avinguda Matadepera 49.
+              También ofrecemos frutas exóticas únicas — pitahaya, guanábana, lichis y papaya —, verduras, tubérculos, productos a granel, legumbres, miel natural y yerba mate. Ven a visitarnos en Avinguda Matadepera 49.
             </p>
 
             {/* Values grid */}
@@ -140,7 +140,7 @@ export default function Nosotros() {
           {[
             { img: 'https://images.unsplash.com/photo-1560761098-21f5722ecb14?w=600&h=400&fit=crop&auto=format', label: 'Frutas del campo', alt: 'Frutas' },
             { img: 'https://images.unsplash.com/photo-1597362925123-77861d3fbac7?w=600&h=400&fit=crop&auto=format', label: 'Verduras frescas', alt: 'Verduras' },
-            { img: 'https://images.unsplash.com/photo-1546173159-315724a31696?w=600&h=400&fit=crop&auto=format', label: 'Batidos naturales', alt: 'Batidos' },
+            { img: 'https://images.unsplash.com/photo-1601493700631-2b16ec4b4716?w=600&h=400&fit=crop&auto=format', label: 'Frutas tropicales', alt: 'Frutas tropicales' },
           ].map((item) => (
             <div key={item.label} className="relative overflow-hidden group" style={{ borderRadius: '8px', height: '200px' }}>
               <img src={item.img} alt={item.alt}

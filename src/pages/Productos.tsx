@@ -1,9 +1,9 @@
 import { useState, useEffect } from 'react'
 import { useSearchParams, Link } from 'react-router'
-import { FRUTAS, VERDURAS, BATIDOS } from '../data'
+import { FRUTAS, VERDURAS } from '../data'
 import { IconInstagram } from '../components/Icons'
 
-type Tab = 'frutas' | 'verduras' | 'batidos'
+type Tab = 'frutas' | 'verduras'
 
 const LeafIcon = () => (
   <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#1d4a2a" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -58,20 +58,15 @@ const TAB_ICONS = {
       <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/>
     </svg>
   ),
-  batidos: (
-    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-      <path d="M8 2h8l1 7H7L8 2z"/><path d="M7 9l1.5 11h7L17 9"/><path d="M9 13h6"/>
-    </svg>
-  ),
 }
 
 export default function Productos() {
   const [searchParams, setSearchParams] = useSearchParams()
   const tabParam = searchParams.get('tab') as Tab | null
-  const [activeTab, setActiveTab] = useState<Tab>(tabParam === 'batidos' ? 'batidos' : tabParam === 'verduras' ? 'verduras' : 'frutas')
+  const [activeTab, setActiveTab] = useState<Tab>(tabParam === 'verduras' ? 'verduras' : 'frutas')
 
   useEffect(() => {
-    if (tabParam && ['frutas', 'verduras', 'batidos'].includes(tabParam)) {
+    if (tabParam && ['frutas', 'verduras'].includes(tabParam)) {
       setActiveTab(tabParam as Tab)
     }
   }, [tabParam])
@@ -81,7 +76,7 @@ export default function Productos() {
     setSearchParams(tab === 'frutas' ? {} : { tab })
   }
 
-  const products = activeTab === 'frutas' ? FRUTAS : activeTab === 'verduras' ? VERDURAS : BATIDOS
+  const products = activeTab === 'frutas' ? FRUTAS : VERDURAS
 
   return (
     <>
@@ -113,7 +108,6 @@ export default function Productos() {
             {([
               { key: 'frutas' as Tab, label: 'Frutas', count: FRUTAS.length },
               { key: 'verduras' as Tab, label: 'Verduras', count: VERDURAS.length },
-              { key: 'batidos' as Tab, label: 'Batidos', count: BATIDOS.length },
             ]).map((tab) => (
               <button key={tab.key} onClick={() => handleTab(tab.key)}
                 className="px-5 py-2.5 text-sm font-medium transition-all duration-200 flex items-center gap-2"
@@ -164,7 +158,7 @@ export default function Productos() {
                 onMouseEnter={e => { (e.currentTarget as HTMLElement).style.backgroundColor = '#e8601c'; (e.currentTarget as HTMLElement).style.color = '#fbf5ea' }}
                 onMouseLeave={e => { (e.currentTarget as HTMLElement).style.backgroundColor = 'transparent'; (e.currentTarget as HTMLElement).style.color = '#e8601c' }}
               >
-                Pedido al por menor
+                Pedido especial
               </Link>
             </div>
           </div>
