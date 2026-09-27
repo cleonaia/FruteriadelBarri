@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,600&family=Outfit:wght@300;400;500;600&display=swap');
+@import 'tailwindcss';
+
+@theme {
+  --font-display: 'Fraunces', Georgia, serif;
+  --font-body: 'Outfit', system-ui, sans-serif;
+
+  --color-cream: #fbf5ea;
+  --color-forest: #1d4a2a;
+  --color-forest-light: #2d6b3f;
+  --color-grove: #4a7c59;
+  --color-tangerine: #e8601c;
+  --color-tangerine-light: #f5915a;
+  --color-espresso: #1a1209;
+  --color-bark: #7a5c3a;
+  --color-straw: #e8d9b8;
+  --color-leaf: #a8c97e;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+::selection {
+  background-color: #1d4a2a;
+  color: #fbf5ea;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: #fbf5ea;
+  color: #1a1209;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Hide scrollbars until scrolling */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #c4b89a;
+  border-radius: 3px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+html:hover::-webkit-scrollbar-thumb {
+  opacity: 1;
+}
